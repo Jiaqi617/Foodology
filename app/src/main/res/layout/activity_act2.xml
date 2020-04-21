@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Act2">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        app:tabTextColor="@android:color/background_dark">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/customization_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customization"
+            android:textSize="10sp" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/nearme_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Near me"
+            android:textSize="12sp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/my_favorite_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="my favorite"
+            android:textSize="12sp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/my_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="my account"
+            android:textSize="12sp" />
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>
+
